@@ -155,7 +155,7 @@ MonoBehaviour:
   - {fileID: 1570188502837424322, guid: 37b025fe4e5fa71458901518d56279dc, type: 3}
   - {fileID: 4246805292988801785, guid: c5b91f12f2603724d9234aa2fca0853a, type: 3}
   - {fileID: 7593336337570049039, guid: 3fe7f6afca80eae419beb6852469ba06, type: 3}
-  minSpawnTime: 0.5
+  minSpawnTime: 0.2
   maxSpawnTime: 3
 --- !u!4 &87088321
 Transform:
@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 87088319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.8, y: -25.1, z: 991.72235}
+  m_LocalPosition: {x: 72.1, y: -25.1, z: 991.72235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -414,8 +414,8 @@ Transform:
   m_GameObject: {fileID: 303301083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.6, y: -10.3, z: 0}
-  m_LocalScale: {x: 176.75598, y: 5.8783746, z: 1.0972}
+  m_LocalPosition: {x: -53.5899, y: -10.3, z: 0}
+  m_LocalScale: {x: 130.78175, y: 5.8783746, z: 1.0972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -446,7 +446,7 @@ Transform:
   m_GameObject: {fileID: 1065666389}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.8, y: 4.8, z: 991.72235}
+  m_LocalPosition: {x: 72.1, y: 4.8, z: 991.72235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 1143947181}
   - component: {fileID: 1143947180}
   - component: {fileID: 1143947183}
+  - component: {fileID: 1143947184}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -580,6 +581,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2098499344}
+--- !u!114 &1143947184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143947179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe347f49d2f8a04d913547329b97143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 1daa5a834babeca49aad070cc502314b, type: 2}
+  whiteNoiseFrequency: 0
+  whiteNoiseLength: 0.1
+  screenJumpFrequency: 0
+  screenJumpLength: 0.2
+  screenJumpMinLevel: 0.1
+  screenJumpMaxLevel: 0.9
+  flickeringStrength: 0.003
+  flickeringCycle: 111
+  isSlippage: 1
+  isSlippageNoise: 1
+  slippageStrength: 0.005
+  slippageInterval: 1
+  slippageScrollSpeed: 33
+  slippageSize: 11
+  chromaticAberrationStrength: 0.005
+  isChromaticAberration: 1
+  isMultipleGhost: 1
+  multipleGhostStrength: 0.01
+  isScanline: 1
+  isMonochrome: 0
+  isLetterBox: 0
+  isLetterBoxEdgeBlur: 0
+  letterBoxType: 0
+  isFilmDirt: 0
+  filmDirtTex: {fileID: 0}
+  isDecalTex: 0
+  decalTex: {fileID: 2800000, guid: 2786c4e3dd25d3d4c888be4d1db51b1b, type: 3}
+  decalTexPos: {x: 0, y: 0}
+  decalTexScale: {x: 0, y: 0}
+  isLowResolution: 1
+  resolutions: {x: 0, y: 0}
 --- !u!1 &2098499344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5945763528995484518, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
@@ -611,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 2106548947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.8, y: -10.2, z: 991.72235}
+  m_LocalPosition: {x: 72.1, y: -10.2, z: 991.72235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -633,7 +678,7 @@ MonoBehaviour:
   - {fileID: 1570188502837424322, guid: 37b025fe4e5fa71458901518d56279dc, type: 3}
   - {fileID: 4246805292988801785, guid: c5b91f12f2603724d9234aa2fca0853a, type: 3}
   - {fileID: 7593336337570049039, guid: 3fe7f6afca80eae419beb6852469ba06, type: 3}
-  minSpawnTime: 0.5
+  minSpawnTime: 0.2
   maxSpawnTime: 3
 --- !u!1001 &9159478084421140913
 PrefabInstance:
