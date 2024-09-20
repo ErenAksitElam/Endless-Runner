@@ -18,11 +18,15 @@ public class PlayerMovement : MonoBehaviour
 
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
+
+    Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       // Get the Rigidbody2D component attached to the player
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +43,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+
+        anim.SetBool("IsOnGround", isGrounded);
     }
     
     private void Jump()
