@@ -12,20 +12,16 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;                     // Reference to the Rigidbody2D component
     private bool isGrounded;                    // Is the player on the ground?
-
+    
     public AudioClip jump;
-    public AudioClip backgroundMusic;
-
-    public AudioSource sfxPlayer;
-    public AudioSource musicPlayer;
-
+    public AudioSource playerSFX;
     Animator anim;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();       // Get the Rigidbody2D component attached to the player
-
+        playerSFX = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
     }
 
@@ -41,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
         //Jumping logic
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
+            playerSFX.PlayOneShot(jump);
             Jump();
         }
 
