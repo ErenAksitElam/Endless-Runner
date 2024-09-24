@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6659999913571132878}
   - component: {fileID: 8258876961997798238}
-  - component: {fileID: 2610849142210458480}
+  - component: {fileID: 4881035963359140970}
   m_Layer: 6
   m_Name: Long Platform
   m_TagString: CleanUp
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 7593336337570049039}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -121.6678, y: -38.59909, z: 0}
-  m_LocalScale: {x: 90, y: 5.8783746, z: 1.0972}
+  m_LocalPosition: {x: -121.59, y: -38.59909, z: 0}
+  m_LocalScale: {x: 121.61249, y: 5.8783746, z: 1.0972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.035105634, g: 0.6132076, b: 0, a: 1}
   m_FlipX: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2610849142210458480
-PolygonCollider2D:
+--- !u!61 &4881035963359140970
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -127,12 +127,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5100988, y: -0.43661723}
-      - {x: -0.5072846, y: -0.45428002}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
-  m_UseDelaunayMesh: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
