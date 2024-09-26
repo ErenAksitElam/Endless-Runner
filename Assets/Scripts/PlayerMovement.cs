@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundCheckPoint;          // A point to check if the player is grounded
     public float checkRadius = 0.2f;            // Radius of the overlap circle for ground detection
     public LayerMask groundLayer;               // Layer of the ground objects
+    public int doubleJump = 1;
 
     private Rigidbody2D rb;                     // Reference to the Rigidbody2D component
     private bool isGrounded;                    // Is the player on the ground?
@@ -35,10 +36,16 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, checkRadius, groundLayer);
 
         //Jumping logic
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        if (doubleJump == 1 && Input.GetKeyDown(KeyCode.Space))
         {
             playerSFX.PlayOneShot(jump);
             Jump();
+            doubleJump = doubleJump - 1;
+        }
+
+        if (isGrounded == true)
+        {
+            doubleJump = 1;
         }
 
         anim.SetBool("IsOnGround", isGrounded);
