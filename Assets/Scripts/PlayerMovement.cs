@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jump;
     public AudioSource playerSFX;
     Animator anim;
+
+    public int tempTimer = 1;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,13 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();       // Get the Rigidbody2D component attached to the player
         playerSFX = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
+
+        InvokeRepeating("IncreaseSpeed", tempTimer, tempTimer);
+    }
+
+    private void IncreaseSpeed()
+    {
+        moveSpeed += 2f;
     }
 
     // Update is called once per frame
