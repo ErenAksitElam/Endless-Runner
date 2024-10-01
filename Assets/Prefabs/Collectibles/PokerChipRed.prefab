@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04aa1ceb178d23458430e7473a2aad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 3637806647058403235, guid: 42a8615c24b7c434c9655142e4975f76, type: 3}
+  score: 0
 --- !u!50 &285037460113838075
 Rigidbody2D:
   serializedVersion: 4
