@@ -1178,7 +1178,7 @@ GameObject:
   - component: {fileID: 715614510}
   m_Layer: 0
   m_Name: Fall Death Zone
-  m_TagString: Untagged
+  m_TagString: DeathZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2986,8 +2986,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db82980dcb260e40adc344a83c9129c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   scoreText: {fileID: 2308395856638985222}
+--- !u!114 &2098499353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098499344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52b833c4569b7d4db5e83ec6e6a62de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106548947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,6 +3412,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5945763528995484518, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2098499345}
+    - targetCorrespondingSourceObject: {fileID: 5945763528995484518, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2098499353}
   m_SourcePrefab: {fileID: 100100000, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class PlayerChipCollect : MonoBehaviour
 {
-    public int score = 0;
+    static int score = 0;
     public TextMeshProUGUI scoreText;
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,5 +27,10 @@ public class PlayerChipCollect : MonoBehaviour
     private void Update()
     {
         scoreText.text = score.ToString();
+    }
+
+    public void ClearScore()
+    {
+        score = 0;
     }
 }

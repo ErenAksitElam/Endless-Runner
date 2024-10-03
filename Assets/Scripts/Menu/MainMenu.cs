@@ -11,11 +11,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("DefaultScene");
     }
 
-    public void Settings()
-    {
-        //SceneManager.LoadScene("Settings");
-    }
-
     public void Quit()
     {
         Application.Quit();
