@@ -327,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -751, y: 386}
+  m_AnchoredPosition: {x: -751, y: 284}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219532652
@@ -3122,18 +3122,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2308395856638985222}
---- !u!114 &2098499353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098499344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52b833c4569b7d4db5e83ec6e6a62de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2106548947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3547,9 +3535,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5945763528995484518, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2098499345}
-    - targetCorrespondingSourceObject: {fileID: 5945763528995484518, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2098499353}
   m_SourcePrefab: {fileID: 100100000, guid: d2c5593474e09eb4983da93f4af6a2e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
