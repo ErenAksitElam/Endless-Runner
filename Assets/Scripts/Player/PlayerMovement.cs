@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;                // Constant forward speed
+    static float moveSpeed = 50f;                // Constant forward speed
     public float jumpForce = 10f;               // Jump force
     public Transform groundCheckPoint;          // A point to check if the player is grounded
     public float checkRadius = 0.2f;            // Radius of the overlap circle for ground detection
@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource playerSFX;
     Animator anim;
 
-    public int tempTimer = 1;
+    public int tempTimer = 2;
     
     // Start is called before the first frame update
     void Start()
@@ -71,5 +71,10 @@ public class PlayerMovement : MonoBehaviour
         //Draw a circle to visualize the ground check point in the editor
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheckPoint.position, checkRadius);
+    }
+
+    public void SetSpeedDefault()
+    {
+        moveSpeed = 50f;
     }
 }

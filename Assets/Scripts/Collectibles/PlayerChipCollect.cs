@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Unity.PlasticSCM.Editor.WebApi;
 
 public class PlayerChipCollect : MonoBehaviour
 {
