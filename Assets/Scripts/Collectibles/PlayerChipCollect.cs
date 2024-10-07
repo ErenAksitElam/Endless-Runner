@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class PlayerChipCollect : MonoBehaviour
 {
     static int score = 0;
+    public int scorePublic = score;
     public TextMeshProUGUI scoreText;
 
     public AudioClip collect;
