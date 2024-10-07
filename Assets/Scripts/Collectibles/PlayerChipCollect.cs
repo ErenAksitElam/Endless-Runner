@@ -10,10 +10,14 @@ public class PlayerChipCollect : MonoBehaviour
     static int score = 0;
     public TextMeshProUGUI scoreText;
 
+    public AudioClip collect;
+    public AudioSource chipSFX;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Chip"))
         {
+            chipSFX.PlayOneShot(collect);
             score += 1;
         }
     }
@@ -21,6 +25,8 @@ public class PlayerChipCollect : MonoBehaviour
     private void Start()
     {
         scoreText.text = "0";
+
+        chipSFX = GetComponent<AudioSource>();
     }
 
     private void Update()

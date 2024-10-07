@@ -128,15 +128,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9800e560f5397c14292327e0557b7a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 100
   jumpForce: 130
   groundCheckPoint: {fileID: 8049040705141101550}
   checkRadius: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  doubleJump: 1
   jump: {fileID: 8300000, guid: cc0917f3e06ac6a4399bc39b873e1d3a, type: 3}
   playerSFX: {fileID: 0}
+  tempTimer: 2
 --- !u!58 &6252863668908532293
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -3122,6 +3122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2308395856638985222}
+  collect: {fileID: 8300000, guid: ceb997c49c18f8b478d9c6af998fbc71, type: 3}
+  chipSFX: {fileID: 0}
 --- !u!1 &2106548947
 GameObject:
   m_ObjectHideFlags: 0
