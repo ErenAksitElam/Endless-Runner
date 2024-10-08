@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db82980dcb260e40adc344a83c9129c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scorePublic: 1
   scoreText: {fileID: 1899202750}
   collect: {fileID: 0}
   chipSFX: {fileID: 0}
@@ -1104,27 +1105,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795411156}
-  - component: {fileID: 1795411155}
+  - component: {fileID: 1795411157}
+  - component: {fileID: 1795411158}
   m_Layer: 0
   m_Name: Score Announcer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1795411155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795411154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 041eb0911e1dfb940838c17f70c43d64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ToMakeScoreWork: {fileID: 74587054}
+  m_IsActive: 0
 --- !u!4 &1795411156
 Transform:
   m_ObjectHideFlags: 0
@@ -1140,6 +1129,127 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1795411157
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795411154}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: dcc3d96a59ae3ae47b5509cafd0c0680, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1795411158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795411154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b3a241e6c36e364d9efa462fdd62c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ToMakeScoreWork: {fileID: 74587054}
+  scorePublic: 0
+  zero: {fileID: 8300000, guid: c265613859785fa4586c9a54cf1c2dcf, type: 3}
+  one: {fileID: 8300000, guid: 92001e3aba2b1014faaf2a86fa8bd07b, type: 3}
+  two: {fileID: 8300000, guid: 0bdb082c618c8a743add23f871b4a666, type: 3}
+  three: {fileID: 8300000, guid: ede6536603889fd4da0b5aac40952f8f, type: 3}
+  four: {fileID: 8300000, guid: 2df508747d5436b4499db85623ab013e, type: 3}
+  five: {fileID: 8300000, guid: 45b7b0a4fbe504043991ce881d771e4e, type: 3}
+  six: {fileID: 8300000, guid: e026ac2347acb3948b243054bbd346d2, type: 3}
+  seven: {fileID: 8300000, guid: 499dd6443627169459dd601d9cc9b6e7, type: 3}
+  eight: {fileID: 8300000, guid: ec904f5b7269fd840b4de9cf0b5753c2, type: 3}
+  nine: {fileID: 8300000, guid: c43a2aa343e19cb46845e5b2e0832465, type: 3}
+  scoreSFX: {fileID: 0}
 --- !u!1 &1880944994
 GameObject:
   m_ObjectHideFlags: 0

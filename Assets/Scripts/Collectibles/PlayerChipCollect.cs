@@ -4,15 +4,17 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerChipCollect : MonoBehaviour
 {
     static int score = 0;
-    public int scorePublic = score;
+    public int scorePublic;
+
     public TextMeshProUGUI scoreText;
 
     public AudioClip collect;
-    public AudioSource chipSFX;
+    public AudioSource chipSFX; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,6 +22,7 @@ public class PlayerChipCollect : MonoBehaviour
         {
             chipSFX.PlayOneShot(collect);
             score += 1;
+            scorePublic = score;
         }
     }
 
@@ -32,6 +35,7 @@ public class PlayerChipCollect : MonoBehaviour
 
     private void Update()
     {
+        
         scoreText.text = score.ToString();
     }
 
