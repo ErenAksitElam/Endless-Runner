@@ -8,6 +8,9 @@ using System;
 
 public class PlayerChipCollect : MonoBehaviour
 {
+
+    [SerializeField] TextMeshProUGUI highScore;
+
     static int score = 0;
     public int scorePublic;
 
@@ -23,6 +26,8 @@ public class PlayerChipCollect : MonoBehaviour
             chipSFX.PlayOneShot(collect);
             score += 1;
             scorePublic = score;
+            CheckHighScore();
+            highScore.text = $"HighScore: {PlayerPrefs.GetInt("HighScore", 0)}";
         }
     }
 
@@ -31,16 +36,25 @@ public class PlayerChipCollect : MonoBehaviour
         scoreText.text = "0";
 
         chipSFX = GetComponent<AudioSource>();
+
+        highScore.text = $"HighScore: {PlayerPrefs.GetInt("HighScore", 0)}";
     }
 
     private void Update()
     {
-        
         scoreText.text = score.ToString();
     }
 
     public void ClearScore()
     {
         score = 0;
+    }
+
+    void CheckHighScore()
+    {
+        if(score > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
     }
 }
