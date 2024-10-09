@@ -5,7 +5,7 @@ using UnityEngine;
 public class NoDice : MonoBehaviour
 {
     public AudioClip[] NoDiceArray;
-
+    public AudioClip breaking;
     public AudioSource deathSFX;
 
     // Start is called before the first frame update
@@ -16,5 +16,6 @@ public class NoDice : MonoBehaviour
         int selection = Random.Range(0, NoDiceArray.Length);
 
         deathSFX.PlayOneShot(NoDiceArray[selection]);
+        deathSFX.PlayOneShot(breaking);
     }
 }

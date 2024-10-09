@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5db82980dcb260e40adc344a83c9129c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore: {fileID: 0}
   scorePublic: 1
   scoreText: {fileID: 1899202750}
   collect: {fileID: 0}
@@ -1048,6 +1049,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5a29127722f01c14187e187694c1c668, type: 3}
   - {fileID: 8300000, guid: 6dfa1fa63f2b9094a87828962c99dbea, type: 3}
   - {fileID: 8300000, guid: aa3412c6ba54aad43b7b460f0f6f8028, type: 3}
+  breaking: {fileID: 8300000, guid: e74a8fd77bdbd8945a5d0bc7f501dd29, type: 3}
   deathSFX: {fileID: 0}
 --- !u!4 &1255767732
 Transform:
