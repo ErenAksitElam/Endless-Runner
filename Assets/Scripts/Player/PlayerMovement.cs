@@ -44,20 +44,22 @@ public class PlayerMovement : MonoBehaviour
         //Check if the player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, checkRadius, groundLayer);
 
-        //Jumping logic
-        if (doubleJump == 1 && Input.GetKeyDown(KeyCode.Space))
-        {
-            playerSFX.PlayOneShot(jump);
-            Jump();
-            doubleJump = doubleJump - 1;
-        }
-
         if (isGrounded == true)
         {
             doubleJump = 1;
         }
 
         anim.SetBool("IsOnGround", isGrounded);
+    }
+
+    public void mobileJump()
+    {
+        if (doubleJump == 1)
+        {
+            playerSFX.PlayOneShot(jump);
+            Jump();
+            doubleJump = doubleJump - 1;
+        }
     }
     
     private void Jump()
