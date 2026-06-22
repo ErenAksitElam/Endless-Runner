@@ -52,3 +52,5 @@ While this was the first game that I ever made the code that I wrote for the aud
             SetMusicVolume();
         }
     }
+
+Other than that this project was a learning opportunity to learn about the fundamentals of Unity and C# 
